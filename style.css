@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Seaweed+Script&display=swap");
+
+*{
+    box-sizing: border-box;
+    font-family: "Nunito Sans", serif;
+    padding: 0;
+    margin: 0;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+.sidebar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem ;
+   border: none;
+   background-color: rgb(242,243,247);
+   flex-wrap: wrap;
+   max-width: 100%;
+   height: auto;
+   
+
+
+    .heading-img{
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+    }
+    img{
+        height: 6rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    p{text-align: center;
+    font-size: 0.8rem;
+    a{color: rgb(104, 178, 247);
+    text-decoration: none;
+    }
+    }
+    
+
+    nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li{
+        list-style-type: none; 
+        margin-bottom: 1rem; 
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: .8rem;
+        
+        
+    }
+    a:hover{
+        color: rgb(104, 178, 247);
+        text-decoration: underline;
+        background-color: #ccc;
+    }
+  }
+
+  footer{
+    margin-left: 0;
+    .footer-template{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-link{
+        text-align: center;
+        a{
+            text-decoration: none;
+            color:rgb(104, 178, 247);
+            font-weight: bold;
+        }
+    }
+    .footer-demo{
+        margin-left: 1.2rem ;
+        a{
+            text-decoration: none;
+            color: rgb(104, 178, 247);
+            font-weight: bold;
+        }
+    }
+  }
+    
+}
+
+.designer-container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 1rem;
+    
+    .designer-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-top: 3rem;
+        h1{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1.5rem;
+            a{
+                color: rgb(104, 178, 247);
+                
+            }
+        }
+        .designer-portfolio{
+            border: 2px solid #000;
+            width: 50%;
+            font-size: 1rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+    }
+    .designer-intro, .designer-image{
+        flex: 1;
+        
+    }
+
+    .designer-image{
+        padding-right: 4rem;
+        height: 100%;
+        padding-top: 5rem;
+        img{
+            width: 400px;
+            height: 100%;
+            
+        }
+    }
+}
+
+.about-section{
+    width: 100%;
+    padding: 2rem 3rem;
+    max-height: 100%;
+
+    .about-author{
+        p{
+            margin:  1rem 0;
+        }
+        h1{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .about-content > p:first-child{
+       margin-bottom: 1rem; 
+    }
+    
+
+    .about-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 2rem  0;
+    
+
+     .about-icons{
+        border: none;
+        width: 20%;
+        height: 10rem;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    }    
+
+    .projects{
+        border: none;
+        background-color: #f9c03f;
+        height: 100%;
+        padding: 2rem ;
+        font-size: 1.7rem;
+        margin: 1rem 0;
+
+        .hire-button{
+            background-color: #f9c03f;
+            border: 1px solid #000;
+            padding: .5rem;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.services{
+    width: 100%;
+
+    .services-heading{
+        padding: 2rem 3rem;
+   
+    }
+    
+    p{
+        margin-bottom: 1rem;
+    }
+    h1{
+        width: 50%;
+    }
+
+    
+    .service-flex{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+        text-align: center;
+
+    }
+
+    .services-icon{
+        width: 30%;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+        p{
+            margin-top: 1rem;
+            width: 80%;
+            text-align: center;
+            /* background-color: aqua; */
+            margin: 0 auto;
+            padding: 1rem;
+          
+        }
+
+        img{
+            margin: 1rem 0;
+        }
+        .image1{
+            background-color: #2c98f0;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .image2{
+            background-color: #f25054;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .image3{
+            background-color:#f7c03e;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .image4{
+            background-color: #a64db7;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .image5{
+            background-color: #2fa599;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .image6{
+            background-color: #4054b2;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+   
+
+    
+}
